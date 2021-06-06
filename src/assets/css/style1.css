@@ -1,0 +1,102 @@
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+.theme-color1{
+    color: #FF5920;
+}
+.theme-color2{
+    color: #FF9C11;
+}
+.bg-theme1{
+    background-color: #ff9c113d;
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff !important;
+    font-family: "Circular Std Bold", sans-serif;
+}
+.navbar img{
+    vertical-align: unset;
+}
+.nav-link{
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.navbar-collapse{
+    padding-left: 2rem;
+}
+.icon-color{
+    color: #FF9C11;
+}
+.badge{
+    line-height: unset;
+    margin-left: 4px;
+    margin-bottom: 1px;
+}
+.home{
+    margin-top: 8rem;
+}
+.font-circular{
+    font-family: "Circular Std", sans-serif;
+}
+.heading{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.heading-2{
+    font-size: 42px;
+}
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 32px;
+  }
+  .heading-2{
+    font-size: 32px;
+}
+}
+.features span{
+    background-color: #ff9c111a;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    padding-top: 14px;
+    padding-left: 14px;
+}
+.features p{
+    font-size: 18px;
+}
+.btn-partner{
+    background-color: #FF5920;
+    width:75%;
+    height: 45px;
+}
+
+.how-it-works{
+    width: 30rem;
+    border: dashed 2px #5D409A;
+    background-color: #f8e7dc;
+}
+.card-img{
+    padding:1rem;
+}
+.arrow{
+    color: #FF5920;
+}
+
+.offerings .nav-link{
+        border: 1px solid #dee2e6;
+}
+
+.testimonial{
+    background: rgb(255,91,31);
+    background: linear-gradient(90deg, rgba(255,91,31,1) 0%, rgba(255,158,16,1) 100%);
+}
+.carousel-inner{
+    border-radius: 1rem;
+}
