@@ -6,7 +6,7 @@ const MapCapex = () => {
   return (
     <>
       <div
-        className="container-fluid bg-primary-voosh"
+        className="container-fluid map bg-primary-voosh"
         style={{ marginTop: "5rem" }}
       >
         <div className="row py-5 ">
@@ -20,10 +20,10 @@ const MapCapex = () => {
           </div>
           <div className="col-sm m-auto text-center m-auto">
             <img
+              className="img-fluid"
               src={voosh_map}
               alt="consumer-survey"
               id="voosh_map"
-              width="600px"
             />
           </div>
         </div>
@@ -32,7 +32,7 @@ const MapCapex = () => {
         <div className="row">
           <div className="col-sm m-auto text-center m-auto">
             <img
-              className="ms-5 img-fluid"
+              className="ms-5 img-fluid capex"
               src={capex}
               alt="consumer-survey"
               width="70%"
@@ -43,7 +43,7 @@ const MapCapex = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm text-center">
-            <button className="btn btn-lg text-white bg-primary-voosh my-4">
+            <button className="btn btn-lg p-btn text-white bg-primary-voosh my-4">
               Become a partner
             </button>
           </div>
