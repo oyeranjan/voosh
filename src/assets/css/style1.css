@@ -1,35 +1,106 @@
+/* ------Common CSS------ */
+
 html, body {
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 body {
   position: relative
 }
 .theme-color1{
-    color: #FF5920;
+    color: #EA5526;
 }
 .theme-color2{
     color: #FF9C11;
 }
-.bg-theme1{
-    background-color: #ff9c113d;
+.bg-primary-voosh{
+    background-color: #EA5526;
+}
+.bg-color1{
+    background-color: #F3F3F3;
+}
+.bg-color2{
+    background-color: #FFD0BC;
+}
+.fs-80{
+    font-size: 80px;
+}
+.fs-70{
+    font-size: 70px;
+    line-height: 5rem;
+}
+.fs-35{
+    font-size: 35px;
+    margin: 0;
+}
+.fs-60{
+    font-size: 60px;
+}
+.fs-50{
+    font-size: 50px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.mt-n1{
+    margin-top: -1rem;
+}
+/* ------Navbar CSS------ */
+.sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.nav-link{
+    font-size: 24px;
+    color: #ffffff!important;
+}
+
+.logo{
+    top: 0.5rem;
+    margin-left: 2rem;
+    position: fixed;
+    border-radius: .5rem;
 }
 .navbar{
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #ffffff !important;
-    font-family: "Circular Std Bold", sans-serif;
-}
-.navbar img{
-    vertical-align: unset;
-}
-.nav-link{
-    margin-top: 0;
-    font-size: 18px;
 }
 
 .navbar-collapse{
     padding-left: 2rem;
 }
+
+/*--- Voosh Offerings ----*/
+.offerings .nav{
+    border-width: 90%;
+    border-bottom: 1px solid gray;
+}
+.offerings .nav-link{
+    font-size: 20px;
+    color: #766F71!important;
+    background-color: none;
+    border: none!important;
+}
+.offerings .nav-item .active{
+    background: none;
+    border-bottom: 5px solid #EA5526 !important;
+    border-radius: 0;
+}
+
+
+
+.section-3 iframe{
+    padding: 1rem 0 2rem 0;
+    width: 100% !important;
+    height: 380px;
+}
+
+
+
+
+/*-------*/
+
 .icon-color{
     color: #FF9C11;
 }
@@ -41,9 +112,6 @@ body {
 .home{
     margin-top: 8rem;
 }
-.font-circular{
-    font-family: "Circular Std", sans-serif;
-}
 .heading{
     font-size: 44px;
     font-weight: 700;
@@ -52,14 +120,7 @@ body {
 .heading-2{
     font-size: 42px;
 }
-@media screen and (max-width: 600px) {
-  .heading {
-    font-size: 32px;
-  }
-  .heading-2{
-    font-size: 32px;
-}
-}
+
 .features span{
     background-color: #ff9c111a;
     border-radius: 25px;
@@ -77,26 +138,192 @@ body {
     height: 45px;
 }
 
-.how-it-works{
-    width: 30rem;
-    border: dashed 2px #5D409A;
-    background-color: #f8e7dc;
+
+
+/* cuisines css */
+.cuisines{
+    background-image: url("../image/cuisines_bg.png");
+    
 }
-.card-img{
-    padding:1rem;
-}
-.arrow{
-    color: #FF5920;
+.cuisines .card{
+    position: unset;
 }
 
-.offerings .nav-link{
-        border: 1px solid #dee2e6;
-}
 
-.testimonial{
-    background: rgb(255,91,31);
-    background: linear-gradient(90deg, rgba(255,91,31,1) 0%, rgba(255,158,16,1) 100%);
+.slides {
+  position: relative; 
 }
-.carousel-inner{
-    border-radius: 1rem;
+.slides .slick-next:before {
+    content: none;
+}
+.slides .slick-next {
+    height: 68px;
+    width:41px;
+    background-image: url("../image/next.png");
+    right: 10%;
+    position: absolute;
+    top: 50%;
+  }
+  .slides .slick-prev:before {
+    content: none;
+}
+.slides .slick-prev {
+    height: 68px;
+    width:41px;
+    background-image: url("../image/prev.png");
+    z-index: 1;
+    left: 10%;
+    position: absolute;
+    top: 50%;
+  }
+  .slick-dots{
+      bottom: -1rem;
+  }
+  .slick-dots li button{
+      background-color: white;
+      border-radius: 5rem;
+  }
+ #quote{
+     width: 100px;
+     height: 130px;
+ }
+
+  #voosh_map{
+      margin-top: -4rem;
+      margin-left: -4rem;
+  }
+
+/* ------Media Query Responsive CSS (Mobile view)------ */
+
+@media screen and (max-width: 450px) {
+  .fs-70{
+      font-size: 30px;
+      line-height: inherit;
+  }
+  .fs-70 font{
+      font-size: 35px;
+      margin-right: 4rem;
+  }
+  .fs-35{
+      font-size: 18px;
+  }
+  .section-2 .text-center{
+      text-align: left!important;
+      padding: 0 2rem 0 2rem;
+  }
+  .section-2 .fs-50{
+      font-size: 25px;
+      max-width: 300px;
+  }
+  .section-2 .p2{
+      font-size: 30px;
+  }
+  .section-2 .fs-5{
+      font-size: 12px !important;
+  }
+  .section-2 button{
+      font-size: 12px!important;
+      width: 150px;
+  }
+  .section-3{
+      padding: 2rem 2rem 0 2rem !important;
+  }
+  .section-3 .fs-60{
+    font-size: 25px;
+  }
+  .section-3 .fs-70{
+    font-size: 30px;
+  }
+  .section-3 .fs-5{
+    font-size: 12px!important;
+    padding: 0 !important;
+  }
+  .section-3 iframe{
+      padding: 1rem 0 2rem 0;
+      width: 100% !important;
+      height: 230px;
+  }
+
+  .section-4 .fs-50{
+        padding-left: 2rem;
+        text-align: left!important;
+        font-size: 32px;
+  }
+  .section-4 .fs-70{
+        padding-left: 2rem;
+        text-align: left!important;
+        font-size: 45px;
+  }
+  .section-4 .col-sm-6{
+      width: 50%;
+  }
+  .section-4 .col-sm-6 p{
+      font-size: 12px;
+  }
+
+  .section-5 .fs-50{
+      font-size: 30px;
+  }
+  .section-5 .fs-50 font{ 
+      font-weight: bold;
+  }
+  .offerings{
+      margin:2rem !important;
+      margin-top: 0 !important;
+  }
+  .offerings .nav{
+    border-width: 100%;
+    border-bottom: none;
+    }
+    .offerings .nav-link{
+        font-size: 12px;
+    }
+    .offerings #tech-tab{
+        letter-spacing: -0.4px;
+    }
+    .offerings .nav-item .active{
+        border-bottom: 3px solid #EA5526 !important;
+    }
+    .section-5-b {
+        padding : 0 !important;
+    }
+    .section-5-b .row {
+        padding : 0 !important;
+    }
+    .section-5-b .fs-50 {
+        font-size: 33px;
+    }
+    .section-5-b .fs-6 {
+        font-size: 12px !important;
+    }
+    .section-5-b .fs-6 {
+        font-size: 12px !important;
+    }
+    .section-5-b .fs-7 {
+        font-size: 12px !important;
+    }
+
+    .cuisines .fs-50{
+        font-size: 30px;
+    }
+    .cuisines .fs-60{
+        font-size: 35px;
+    }
+    .slides .slick-prev {
+    background-image: none;
+    left: 0;
+  }
+  .slides .slick-next {
+    background-image: none;
+    right: 0;
+  }
+
+  .testimonial .fs-60{
+      font-size: 35px;
+  }
+ #quote{
+     width: 80px;
+     height: 100px;
+ }
+
 }

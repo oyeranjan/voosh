@@ -1,13 +1,5 @@
 body {
   margin: 0;
-  font-family: "Circular Std Book", sans-serif;
-  /* font-family: "Circular Std Book Italic", sans-serif;
-  font-family: "Circular Std Medium", sans-serif;
-  font-family: "Circular Std Medium Italic", sans-serif;
-  font-family: "Circular Std Bold", sans-serif;
-  font-family: "Circular Std Bold Italic", sans-serif;
-  font-family: "Circular Std Black", sans-serif;
-  font-family: "Circular Std Black Italic", sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
