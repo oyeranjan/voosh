@@ -1,4 +1,4 @@
-/* ------Common CSS------ */
+/* ------------  Common CSS  ------------ */
 
 html, body {
   font-family: 'Poppins', sans-serif;
@@ -45,15 +45,21 @@ body {
 .mt-n1{
     margin-top: -1rem;
 }
-/* ------Navbar CSS------ */
+
+/* ------------  Navbar CSS ------------ */
+
 .sticky{
     position: fixed;
     width: 100%;
     top: 0;
 }
 .nav-link{
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff!important;
+    padding-right: 2rem !important;
+}
+.nav-item a:hover{
+    color: whitesmoke !important;
 }
 
 .logo{
@@ -63,15 +69,20 @@ body {
     border-radius: .5rem;
 }
 .navbar{
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .navbar-collapse{
     padding-left: 2rem;
 }
 
-/*--- Voosh Offerings ----*/
+
+.hero-text{
+      margin-left: 3rem;
+  }
+/* ------------  Voosh Offerings  ------------ */
+
 .offerings .nav{
     border-width: 90%;
     border-bottom: 1px solid gray;
@@ -100,15 +111,6 @@ body {
 
 
 /*-------*/
-
-.icon-color{
-    color: #FF9C11;
-}
-.badge{
-    line-height: unset;
-    margin-left: 4px;
-    margin-bottom: 1px;
-}
 .home{
     margin-top: 8rem;
 }
@@ -138,7 +140,9 @@ body {
     height: 45px;
 }
 
-
+.section-4 img{
+    height: 152px !important;
+}
 
 /* cuisines css */
 .cuisines{
@@ -214,7 +218,6 @@ body {
   }
   .fs-70 font{
       font-size: 35px;
-      margin-right: 4rem;
   }
   .fs-35{
       font-size: 18px;
@@ -239,10 +242,12 @@ body {
       text-align: center;
       margin-right: 1rem;
   }
-
+  .hero-text{
+      margin-left: 1rem;
+  }
   .section-2 .text-center{
       text-align: left!important;
-      padding: 0 2rem 0 2rem;
+      padding: 0 2rem 0 2.5rem;
   }
   .section-2 .fs-50{
       font-size: 25px;
@@ -259,7 +264,7 @@ body {
       width: 150px;
   }
   .section-3{
-      padding: 2rem 2rem 0 2rem !important;
+      padding: 2rem 2rem 1rem 2rem !important;
   }
   .section-3 .fs-60{
     font-size: 25px;

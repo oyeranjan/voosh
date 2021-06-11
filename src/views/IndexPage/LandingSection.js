@@ -4,13 +4,13 @@ const landingSection = () => {
     return (
       <>
         <div className="container-fluid home">
-          <div className="row align-items-center hero-section">
+          <div className="row align-items-center">
             <div className="col-lg-6 col-sm-12 order-2 order-lg-1">
-              <div className="ms-5">
+              <div className="hero-text">
                 <p className="fs-70 mb-4">
                   A MULTI-CUISINE{" "}
                   <font className="fw-bold theme-color1">
-                    DIGITAL RESTURANT
+                    DIGITAL<br/> RESTURANT<br/>
                   </font>{" "}
                   FAMILY.
                 </p>

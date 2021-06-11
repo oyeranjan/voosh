@@ -44,7 +44,7 @@ const howItWorks = () => {
           </div>
           <div className="col-lg-2 col-sm-6">
             <img src={work_process_5} alt="..."></img>
-            <p className="mt-5">
+            <p className="mt-4">
               Generate additional income without added overhead with training
               and kitchen optimisation
             </p>

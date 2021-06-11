@@ -43,7 +43,7 @@ const MapCapex = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm text-center">
-            <button className="btn btn-lg p-btn text-white bg-primary-voosh my-4">
+            <button className="btn btn-lg p-btn text-white bg-primary-voosh my-5">
               Become a partner
             </button>
           </div>
