@@ -30,41 +30,54 @@ const Cuisines = () => {
     ],
   };
   return (
-    <div className="container-fluid my-5">
-      <div className="row cuisines justify-content-center p-4 pb-5">
+    <div className="container-fluid cuisines my-5">
+      <div className="row  justify-content-center p-4 pb-5">
         <p className="fs-50 text-center text-white pb-3">
           Available <font className="fw-bold fs-60">Cuisines</font>
         </p>
-        <Slider {...settings} >
-        <div className="col-sm-4 pb-5">
-          <div class="card m-auto " style={{ width: "300px", height: "340px" }}>
-            <img src={voosh_thali} class="card-img-top py-4 px-2" alt="..." />
-            <div class="card-body ms-2 mt-n1">
-              <p class="card-text fs-25 fw-bold">Voosh</p>
-              <p class="card-text fs-4 fst-italic mt-n1">Thalis & Bowls</p>
+        <Slider {...settings}>
+          <div className="col-sm-4 pb-5">
+            <div
+              class="card m-auto "
+              style={{ width: "300px", height: "340px" }}
+            >
+              <img src={voosh_thali} class="card-img-top py-4 px-2" alt="..." />
+              <div class="card-body ms-2 mt-n1">
+                <p class="card-text fs-25 fw-bold">Voosh</p>
+                <p class="card-text fs-4 fst-italic mt-n1">Thalis & Bowls</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-sm-4">
-          <div class="card m-auto" style={{ width: "300px", height: "340px" }}>
-            <img src={voosh_south} class="card-img-top py-4 px-2" alt="..." />
-            <div class="card-body ms-2 mt-n1">
-              <p class="card-text fs-25 fw-bold">Voosh</p>
-              <p class="card-text fs-4 fst-italic mt-n1">Dakshin</p>
+          <div className="col-sm-4">
+            <div
+              class="card m-auto"
+              style={{ width: "300px", height: "340px" }}
+            >
+              <img src={voosh_south} class="card-img-top py-4 px-2" alt="..." />
+              <div class="card-body ms-2 mt-n1">
+                <p class="card-text fs-25 fw-bold">Voosh</p>
+                <p class="card-text fs-4 fst-italic mt-n1">Dakshin</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-sm-4">
-          <div class="card m-auto" style={{ width: "300px", height: "350px" }}>
-            <img src={voosh_burger} class="card-img-top py-4 px-2" alt="..." />
-            <div class="card-body ms-2 mt-n1">
-              <p class="card-text fs-25 fw-bold">Voosh</p>
-              <p class="card-text fs-4 fst-italic mt-n1">
-                Burgers & Sandwiches
-              </p>
+          <div className="col-sm-4">
+            <div
+              class="card m-auto"
+              style={{ width: "300px", height: "350px" }}
+            >
+              <img
+                src={voosh_burger}
+                class="card-img-top py-4 px-2"
+                alt="..."
+              />
+              <div class="card-body ms-2 mt-n1">
+                <p class="card-text fs-25 fw-bold">Voosh</p>
+                <p class="card-text fs-4 fst-italic mt-n1">
+                  Burgers & Sandwiches
+                </p>
+              </div>
             </div>
           </div>
-        </div>
         </Slider>
       </div>
     </div>

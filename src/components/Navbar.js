@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../assets/image/Voosh-logo.png";
+import logo from "../assets/image/VooshLogo.png";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar sticky navbar-expand-lg navbar-light bg-primary-voosh" style={{zIndex:2}}>
+      <nav className="navbar sticky navbar-expand-lg navbar-light bg-primary-voosh shadow" style={{zIndex:2}}>
         <div className="container-fluid">
           <p className="navbar-brand"></p>
           <button
@@ -39,8 +39,8 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="logo bg-primary-voosh" style={{zIndex:2}}>
-        <img src={logo} alt="brand-logo" width="200" />
+      <div className="logo bg-primary-voosh one-edge-shadow" style={{zIndex:2}}>
+        <img src={logo} alt="brand-logo" />
       </div>
     </div>
   );

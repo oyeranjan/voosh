@@ -22,15 +22,22 @@ body {
 .bg-color2{
     background-color: #FFD0BC;
 }
+.light-text{
+    color: #817C7C;
+}
 .fs-80{
     font-size: 80px;
 }
 .fs-70{
-    font-size: 70px;
+    font-size: 68px;
     line-height: 5rem;
 }
 .fs-35{
     font-size: 35px;
+    margin: 0;
+}
+.fs-30{
+    font-size: 30px;
     margin: 0;
 }
 .fs-60{
@@ -42,10 +49,17 @@ body {
 .fs-25{
     font-size: 25px;
 }
+.fs-20{
+    font-size: 20px;
+}
 .mt-n1{
     margin-top: -1rem;
 }
-
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
 /* ------------  Navbar CSS ------------ */
 
 .sticky{
@@ -63,10 +77,15 @@ body {
 }
 
 .logo{
-    top: 0.5rem;
+    top: 0.6rem;
     margin-left: 2rem;
     position: fixed;
-    border-radius: .5rem;
+    border-radius: 10px;
+    width: 180px;
+}
+.logo img{
+    padding-left: 0.8rem;
+    width: 170px;
 }
 .navbar{
     padding-top: 3px;
@@ -77,14 +96,30 @@ body {
     padding-left: 2rem;
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../image/Group\ 18.svg);
+}
+.navbar-light .navbar-toggler{
+    border: none;
+}
+
+/* ----------  Landing Section  --------- */
 
 .hero-text{
       margin-left: 3rem;
   }
+.home{
+    margin-top: 9rem;
+}
+.home img{
+    margin-left: -5rem;
+    position: relative;
+    z-index: -1;
+}
 /* ------------  Voosh Offerings  ------------ */
 
 .offerings .nav{
-    border-width: 90%;
+    padding-left: 1rem;
     border-bottom: 1px solid gray;
 }
 .offerings .nav-link{
@@ -107,21 +142,12 @@ body {
     height: 380px;
 }
 
-
+.section-4 ul{
+    font-size: 14px;
+}
 
 
 /*-------*/
-.home{
-    margin-top: 8rem;
-}
-.heading{
-    font-size: 44px;
-    font-weight: 700;
-}
-
-.heading-2{
-    font-size: 42px;
-}
 
 .features span{
     background-color: #ff9c111a;
@@ -144,11 +170,30 @@ body {
     height: 152px !important;
 }
 
-/* cuisines css */
-.cuisines{
-    background-image: url("../image/cuisines_bg.png");
-    
+.cuisines {
+  position: relative;
 }
+
+.cuisines:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-image: url('../image/cuisines_bg.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.cuisines .row {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
 .cuisines .card{
     position: unset;
 }
@@ -159,6 +204,9 @@ body {
 }
 .slides .slick-next:before {
     content: none;
+}
+.slick-slide img {
+    display: initial;
 }
 .slides .slick-next {
     height: 68px;
@@ -195,11 +243,18 @@ body {
      height: 130px;
  }
  .t-card{
-     height: 360px;
+     height: auto;
  }
 
  .t-card-footer img {
     width: 90px;
+}
+.t-card-footer .w-75{
+    width: 65% !important;
+    border-top: 4px solid #EA5526;
+}
+.t-card-footer p{
+    margin-left: 14%;
 }
 .footer img{
     width: 100px;
@@ -219,15 +274,17 @@ body {
   .fs-70 font{
       font-size: 35px;
   }
-  .fs-35{
+  .fs-30{
       font-size: 18px;
   }
 
   .logo{
       margin-left: 1rem;
+      width: 125px;
   }
   .logo img{
-      width:140px;
+      margin-left: -5px;
+      width:120px;
   }
   .navbar button{
       margin-top:2px;
@@ -242,8 +299,20 @@ body {
       text-align: center;
       margin-right: 1rem;
   }
+  .home{
+    margin-top: 7rem;
+}
+  .home img{
+      padding-bottom: 2rem;
+  }
   .hero-text{
       margin-left: 1rem;
+  }
+  .section-2{
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
   }
   .section-2 .text-center{
       text-align: left!important;
@@ -266,6 +335,10 @@ body {
   .section-3{
       padding: 2rem 2rem 1rem 2rem !important;
   }
+  .section-3 .py-5{
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+  }
   .section-3 .fs-60{
     font-size: 25px;
   }
@@ -281,6 +354,22 @@ body {
       width: 100% !important;
       height: 230px;
   }
+  .section-4 .slides .slick-prev {
+    background-image: url(./../image/leftArrow.png);
+    height: 13px;
+    width: 9px;
+    top: 5rem;
+    margin-left: 1rem;
+  }
+  .section-4 .slides .slick-next {
+    background-image: url(./../image/rightArrow.png);
+    height: 13px;
+    width: 9px;
+    top: 5rem;
+    margin-right: 1rem;
+  }
+
+
 
   .section-4 .fs-50{
         padding-left: 2rem;
@@ -306,27 +395,32 @@ body {
       font-weight: bold;
   }
   .offerings{
-      margin:2rem !important;
-      margin-top: 0 !important;
+      margin: 0 !important;
+      position: absolute;
+      
   }
   .offerings .nav{
-    border-width: 100%;
-    border-bottom: none;
+      border-bottom: none;
+      padding: 0 !important;
     }
     .offerings .nav-link{
-        font-size: 12px;
-    }
-    .offerings #tech-tab{
-        letter-spacing: -0.4px;
+        text-align: start;
+        font-size: 13px;
+        padding: 0 0 0.4rem 0;
+        margin-left: -2rem !important;
     }
     .offerings .nav-item .active{
         border-bottom: 3px solid #EA5526 !important;
     }
+    
     .section-5-b {
+        
+        border-top: 2px solid grey;
+        margin-top: 3.9rem !important;
         padding : 0 !important;
     }
     .section-5-b .row {
-        padding : 0 !important;
+        margin: -1.5rem;
     }
     .section-5-b .fs-50 {
         font-size: 33px;
@@ -355,7 +449,10 @@ body {
     background-image: none;
     right: 0;
   }
-
+  .testimonial{
+      margin-bottom: 0 !important;
+      text-align: center;
+  }
   .testimonial .fs-60{
       font-size: 35px;
   }
@@ -376,13 +473,17 @@ body {
  }
  .t-card-footer{
      margin: 0 !important;
+     padding: 1rem !important;
  }
 .t-card-footer img {
     width: 60px !important;
+    margin-left: -1rem !important;
 }
 .t-card-footer p{
-    margin-top: -5px !important;
-    font-size: 12px !important;
+    font-size: 10px !important;
+    padding-top: 1rem !important;
+    text-align: start;
+    margin-left: 0.7rem;
 }
 .map p{
     text-align: left !important;
@@ -391,10 +492,10 @@ body {
     font-size: 30px;
 }
 .map img{
-    margin: -3rem 0 0 2rem !important;
+    margin: -1.4rem 0 0 2rem !important;
 }
 .capex{
-    height: 275px;
+    margin: 0.5rem !important;
 }
 .p-btn{
     font-size: 12px;

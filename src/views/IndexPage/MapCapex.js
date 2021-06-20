@@ -1,20 +1,19 @@
 import React from "react";
-import voosh_map from "../../assets/image/voosh_map.png";
+import voosh_map from "../../assets/image/voosh_2.gif";
 import capex from "../../assets/image/capex.png"
 
 const MapCapex = () => {
   return (
     <>
       <div
-        className="container-fluid map bg-primary-voosh"
-        style={{ marginTop: "5rem" }}
+        className="container-fluid map"
       >
         <div className="row py-5 ">
           <div className="col-sm">
-            <p className="text-white text-start fs-70 m-0  text-center">
+            <p className="text-start fs-70 m-0  text-center">
               Where Are We
             </p>
-            <p className="text-white text-start fw-bold fs-80 mt-n1 text-center ">
+            <p className="text-start fw-bold fs-80 mt-n1 text-center ">
               Located?
             </p>
           </div>
@@ -35,7 +34,6 @@ const MapCapex = () => {
               className="ms-5 img-fluid capex"
               src={capex}
               alt="consumer-survey"
-              width="70%"
             />
           </div>
         </div>

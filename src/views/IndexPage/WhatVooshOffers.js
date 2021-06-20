@@ -1,19 +1,19 @@
 import React from "react"
 import consumer_insight from "./../../assets/image/consumer_insight.png"
 import expert_branding from "./../../assets/image/expert_branding.png"
-import low_risk from "./../../assets/image/low-risk.png"
+import low_risk from "./../../assets/image/Revenue-Graph.gif"
 import tech_emp from "./../../assets/image/tech_emp.png"
 
 const whatVooshOffers = () => {
   return (
     <>
-      <div className="container-fluid section-5 px-5 my-5">
-        <p className="text-center fs-50 pb-3">
+      <div className="container-fluid section-5 px-5 mt-5">
+        <p className="text-center fs-50">
           What Voosh offers <font>you?</font>
         </p>
-        <div className="row mx-5 px-5 offerings">
+        <div className="row mx-5 offerings">
           <ul className="nav nav-pills nav-justified" id="myTab" role="tablist">
-            <li className="nav-item" role="presentation">
+            <li className="w-25 nav-item" role="presentation">
               <button
                 className="nav-link active"
                 id="consumer_i-tab"
@@ -24,7 +24,7 @@ const whatVooshOffers = () => {
                 Consumer Insights
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            <li className="w-25 nav-item" role="presentation">
               <button
                 className="nav-link"
                 id="branding-tab"
@@ -35,7 +35,7 @@ const whatVooshOffers = () => {
                 Expert Branding
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            <li className="w-25 nav-item" role="presentation">
               <button
                 className="nav-link"
                 id="risk-tab"
@@ -46,7 +46,7 @@ const whatVooshOffers = () => {
                 Low Risks
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            <li className="w-25 nav-item" role="presentation">
               <button
                 className="nav-link"
                 id="tech-tab"
@@ -69,7 +69,7 @@ const whatVooshOffers = () => {
             role="tabpanel"
             aria-labelledby="consumer_i-tab"
           >
-            <div className="row py-5">
+            <div className="row">
               <div className="col-sm m-auto">
                 <p className="theme-color1 text-start fw-bold fs-50 m-0">
                   Consumer
@@ -123,7 +123,7 @@ const whatVooshOffers = () => {
             role="tabpanel"
             aria-labelledby="branding-tab"
           >
-            <div className="row py-5">
+            <div className="row">
               <div className="col-sm">
                 <p className="theme-color1 text-start fw-bold fs-50 m-0">
                   Expert
@@ -174,7 +174,7 @@ const whatVooshOffers = () => {
             role="tabpanel"
             aria-labelledby="risk-tab"
           >
-            <div className="row py-5">
+            <div className="row">
               <div className="col-sm">
                 <p className="theme-color1 text-start fw-bold fs-50 m-0">Low</p>
                 <p className="theme-color1 text-start fw-bold fs-50 mt-n1 ">
@@ -219,7 +219,7 @@ const whatVooshOffers = () => {
             role="tabpanel"
             aria-labelledby="tech-tab"
           >
-            <div className="row py-5">
+            <div className="row">
               <div className="col-sm">
                 <p className="theme-color1 text-start fw-bold fs-50 m-0">
                   Tech
